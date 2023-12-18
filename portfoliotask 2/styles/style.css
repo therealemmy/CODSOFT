@@ -1,0 +1,391 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    font-size: 12px;
+    background-color: #eee;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.homecontent, .about {
+    margin: 7rem;
+}
+
+header {
+    padding: 2rem;
+    display: flex;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    margin-top: -20rem;
+    border-radius: .5rem;
+    width: 100%;
+    background-color: #eee;
+    /* padding-right: 2.2rem; */
+}
+.logo {
+    margin-right: 5.5rem;
+    margin-left: 5rem;
+}
+
+.logo span {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 5px 11px 7px 11px;
+    color: #fff;
+}
+
+header nav ul{
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 30rem;
+    gap: 3rem;
+}
+.cv {
+    color: #fff;
+    background-color: #000;
+    padding: 0.7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: .2rem;
+    margin-top: -0.6rem;
+    margin-left: 6rem;
+}
+.cv i {
+    margin-left: 4px;
+    color: #fff;
+    background-color: #000;
+}
+header nav ul li a {
+    position: relative;
+}
+
+header nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff; 
+    transition: width 0.3s ease; 
+}
+
+
+header nav ul li a:hover::before {
+    width: 100%; 
+}
+
+header nav ul li a:hover::before {
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 1.3px;
+    bottom: 0;
+    left: 0;
+    bottom: -2px;
+    background-color: #000;
+}
+.text h2 {
+    font-size: 20px;
+    cursor: grab;
+}
+.text p {
+    margin: 0.5rem;
+    line-height: 20px;
+}
+.homecontent {
+    display: flex;
+    margin: 8rem;
+    margin-left: 13rem;
+    margin-top: 20rem;
+    background-color: #eee;
+}
+
+.homecontent img {
+    width: 400px;
+    margin-top: -10rem;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    margin-top: 3rem;
+}
+.link i {
+    font-size: 15px;
+    margin-left: -4rem;
+}
+.link i:hover {
+    transform: scale(1.1);
+}
+.text h2:hover::before {
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 1.3px;
+    bottom: 0;
+    left: 0;
+    bottom: -2px;
+    background-color: #000;
+}
+
+.text h2::before {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff; 
+    transition: width 0.3s ease;
+}
+.scroll {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 3rem;
+}
+
+.scroll i {
+    font-size: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    border-radius: .2rem;
+}
+.scroll i:hover {
+    margin-top: 0.3rem;
+    transition: .1s ease-in-out;
+}
+.scroll p {
+    font-size: 10px;
+}
+
+/* ABOUT SECTION */
+.about {
+    display: flex;
+    padding-top: 7.7rem;
+    margin-right: 13rem;
+}
+.about img {
+    width: 500px;
+}
+.about .aboutxt {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 15rem;
+}
+.aboutxt h4 {
+    font-size: 22px;
+}
+.aboutxt {
+    margin-left: -3.3rem;
+}
+
+.btn button {
+    border-radius: .2rem;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    margin-top: 2rem;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+}
+.btn button i {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn i:hover {
+    transform: scale(1.1);
+    transform: rotate('45deg');
+}
+
+.btn a #i {
+    color: #000;
+    background-color: #fff;
+    border: 1.5px solid #000;
+    padding: 0.7rem;
+    border-radius: .2rem;
+    margin-top: 2rem;
+    font-size: 15px
+}
+
+.btn {
+    display: flex;
+    gap: 1rem;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    margin: 8rem;
+    margin-left: 10rem;
+    background: transparent;
+}
+
+.portfolio h4{
+    font-size: 22px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: space-evenly;
+}
+.container .item {
+    width: 200px;
+    height: 310px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    border-radius: .2rem;
+}
+.okay {
+    margin: 1rem;
+}
+.okay img {
+    height: 180px;
+    width: 170px;
+    border-radius: .2rem;
+}
+.item .buttons {
+   position: absolute;
+}
+
+.okay.buttons a, .okay .buttons button {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem;
+}
+
+.okay .buttons button i {
+    color: #fff;
+    background: transparent;
+}
+
+.okay.buttons a {
+    padding: 2rem;
+    color: #000;
+    background-color: #fff;
+    mix-blend-mode: color-burn;
+}
+
+.okay p, .okay a{
+    font-size: 9px;
+    margin-top: 0.5rem;
+}
+
+.item a {
+    color: #fff;
+    background-color: #000;
+    padding: 0.5rem;
+    border-radius: .2rem;
+    position: absolute;
+}
+.item i {
+    padding: 0.5rem;
+    border: 0.8px solid black;
+    margin-left: 3.8rem;
+    border-radius: .2rem;
+    margin-top: 0.5rem;
+}
+
+/* CONTACT */
+.contact {
+    margin: 8rem;
+
+}
+
+form {
+    padding: 3rem;
+    background-color: #000;
+   width: 600px;
+   height:500px;
+   text-decoration: none;
+   border-radius: .2rem;
+
+}
+
+form input {
+    border: 0.1px solid #b4b4b4;
+    padding: 0.75rem;
+    margin: 1rem;
+    background-color: #000;
+    border-radius: .3rem;
+    color: #fff;
+    outline: none;
+}
+
+.row1 {
+    display: flex;
+    background-color: #000;
+}
+.row1 input  {
+    width: 300px;
+}
+
+.form .subject {
+    width: 500px;
+}
+
+.form label {
+    color: #fff;
+    background-color: #000;
+    font-size: 10px;
+    font-weight: 100;
+    position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+}
+
+form input:not(:placeholder-shown):not(:focus) + label,
+form input:focus + label {
+  transform: translateY(-100%);
+  font-size: 12px;
+  color: #666;
+}
+
+/* Add some styles for focus */
+form input:focus {
+  outline: none;
+  opacity: 60% !important;
+}
+.form textarea {
+    width: 500px;
+    margin-left: 1rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    outline: none;
+    border-radius: .3rem;
+}
+
+.form textarea::placeholder {
+    padding: 1rem;
+    font-size: 12px;
+}
+
+.form button {
+    padding: 1rem;
+    border-radius: .3rem;
+    background-color: rgb(193, 1, 1);
+    color: #fff;
+    border: none;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
